@@ -1,0 +1,268 @@
+html{
+	margin:0;
+	padding:0;
+	background-color:#343a40;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #e8ded2;
+}
+
+section{
+	background:#a3d2ca;
+	padding:10px 10px;
+	color:#056676;
+	margin-top:100px;
+}
+
+.btn-outline-danger {
+    color: #056676;
+    background-color: transparent;
+    background-image: none;
+    border-color: #056676;
+}
+
+.btn-lg {
+    color: #056676;
+    background-color: transparent;
+    background-image: none;
+    border-color: #056676;
+}
+
+.menii{
+	background:rgb(0,0,0,0.8);
+}
+.menii a btn-outline-danger{
+	border:black solid 2px;
+}
+.menii a:hover{
+	border:black solid 2px;
+}
+
+section h3{
+	padding:10px;
+}
+section hr{
+	border-top: 2px solid #dc3545;
+}
+
+section h2{
+	padding:20px 0;
+}
+
+section img{
+	padding-bottom:20px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 50px;
+}
+
+footer{
+	
+	padding-top:30px;
+}
+footer hr{
+	border-top: 2px solid #dc3545;
+}
+
+footer h5{
+	font-size:17px;
+}
+footer li a{
+	color:white;
+}
+
+footer li a:hover{
+	color:#dc3545;
+	text-decoration:none;
+}
+
+.footer-copyright {
+	color:white;
+	background-color:#2d3339;
+}
+.footer-copyright a {
+	color:#dc3545;
+}
+
+.footer-copyright a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+.table-dark {
+    color: #e8ded2;
+    background-color: #5eaaa8;
+}
+
+#tabela4{
+	color: #e8ded2;
+    background-color: #5eaaa8;
+}
+
+#tabela5{
+	color: #e8ded2;
+    background-color: #5eaaa8;
+}
+
+#tabela6{
+	color: #e8ded2;
+    background-color: #5eaaa8;
+}
+
+.btnDodajRepertoar{
+	color: #fff;
+    background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+
+#2{
+	color: #fff;
+    background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+
+#3{
+	color: #fff;
+    background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+
+#4{
+	color: #fff;
+    background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+.d-inline-block {
+	background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #a3d2ca;
+    border-color: #a3d2ca;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 500px;
+margin-top: 100px;
+margin-bottom: 100px;
+width: 500px;
+background-color: #a3d2ca !important;
+color:gray;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #dc3545;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+text-align:center;
+}
+
+form p{
+	color:white;
+}
+.social_icon{
+position: absolute;
+right: 20px;
+top: 0px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color:#dc3545;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #5eaaa8;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+color:#dc3545;
+}
+
+.d-flex a{
+	color:#dc3545;
+}
+
+#prikaz{
+	padding:30px;
+	background-color: #e8ded2;
+}
+
+a:hover{
+	text-decoration:none;
+}
+#tabela{
+	background: #5eaaa8;
+}
+#izmijeni{
+	background: #5eaaa8;
+}
+element.style {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+

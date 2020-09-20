@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Filmovi</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  	<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">	
+  	<link rel="stylesheet" href="/css/Film.css"/>	
+  	 <script src="/js/jquery.min.js"></script>
+     <script type="text/javascript" src="/js/Film.js"></script>
+
+	
+	<link href="img/favicon1.png" rel="icon">
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link rel="stylesheet"  href="css/style.css"/>
+	 </head>
+	
+<body style="background-color: white">
+
+	<!-- navigacijski meni-->
+		<header id="header" class="fixed-top header-inner-pages" style="background-color: #444444;">
+		<div class="container d-flex align-items-center" style="background-color: #444444;">
+		  <h1 class="logo mr-auto"><a href="index.html" style="color:#a3d2ca "></a></h1>
+		  <nav class="nav-menu d-none d-lg-block" style="background-color: #056676">
+			<ul>
+			  <li><a href="index.html">Početna</a></li>
+			  <li><a href="Film.html">Filmovi</a></li>
+			  <li><a href="Bioskop.html">Bioskopi</a></li>
+			  <li><a href="Login.html">Prijava</a></li>
+			  <li><a href="Register.html">Registracija</a></li>
+			</ul>
+		  </nav>
+		</div>
+		</header>
+		
+
+		<section class="top">	
+			<h2 style="color:#a3d2ca">FILMOVI:</h2>
+			<hr class=" accent-2  d-inline-block" style="background-color: #5eaaa8">
+			<h2>
+			<div class="dropdown">
+			  <button class="btn btn-info dropdown-toggle" type="button" style="background-color: #444444" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			   Sortiraj po:
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <button class="sortNaziv dropdown-item">Nazivu</button>
+			    <button class="sortOcena dropdown-item">Oceni</button>
+			   <button class="sortTrajanje dropdown-item">Trajanju</button>
+			  </div>
+			  <a href="Pretraga_Filmova.html" class="btn btn-info" role="button" style="background-color: #444444" aria-pressed="true">Pretraga po kriterijumu</a>
+			</div>
+		
+			</h2>	
+			<div class="row "id="table" style="background-color: #e8ded2"></div>
+			
+			<div class="row" id="sortirani" style="background-color: #e8ded2"></div>
+			
+			<div class="row" id="sortiraniOcena" style="background-color: #e8ded2"></div>
+			
+			<div class="row" id="sortiraniTrajanje" style="background-color: #e8ded2"></div>
+		</section>
+		
+		
+	<div class=" z-depth-1 d-none" id="filmPrikaz" style="margin-top:180px">
+		
+		<section class="text-center" id="prikaz">
+	
+	    <h3 class="font-weight-bold " style="color: #5eaaa8">PREGLED PROJEKCIJA FILMA</h3>
+		<hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 300px;">
+
+			<div class="row">
+		
+				<table class="table table-hover table-striped table-info" id="tabela" style="background-color: #444444; color: white;">
+				  
+				    <tr>
+				    <th scope="col">Naziv filma</th>
+				      <th scope="col">Datum održavanja</th>
+				      <th scope="col">Vreme početka</th>
+				      <th scope="col">Cena</th>
+				      <th scope="col">Broj rezervacija</th>
+				      <th scope="col">Bioskop</th>
+				      <th scope="col">Sala</th>
+				       <th scope="col">Opcija</th>
+				    </tr>
+				  
+				  
+				</table>
+				
+			</div>
+		</section>
+	</div>
+
+		<div class="d-none" id="kartica1" >
+			<div class="d-flex justify-content-center h-100" style="background-color: #e8ded2; padding-bottom: 20px; ">
+				<div class="card" id="logcard">
+					<div class="card-header" style="background-color: #444444;">
+						<h3>POPUNITE PODATKE:</h3>
+						
+					</div>
+					<div class="card-body" style="background-color: #444444;">
+						<form>
+							<div class="input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" style="background-color:#5eaaa8;"><i class="fa fa-film"></i></span>
+								</div>
+								<input type="text" class="form-control" id="korisnickoIme" placeholder="Korisničko ime">
+								
+							</div>
+							<div class="input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" style="background-color:#5eaaa8;"><i class="fa fa-film"></i></span>
+								</div>
+								<input type="password" class="form-control" id="lozinka" placeholder="Lozinka">
+							</div>
+							<div id="filmic">
+							
+							</div>
+
+							<div class="form-group">
+								<input id="rezervacija" value="Rezerviši" class="btn float-right login_btn" >
+							</div>
+						</form>
+					</div>
+					<div class="card-footer" style="background-color: #444444;">
+						<div class="d-flex justify-content-center links">
+							Niste prijavljeni?
+						</div>
+						<div class="d-flex justify-content-center">
+							<a href="Register.html" style="color:white;">Registrujte se!</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+  <footer id="footer" style="background-color: #444444;">
+
+      <div class="copyright">
+        &copy; Copyright <strong><span>Bioskop projekat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+   
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+ 
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
